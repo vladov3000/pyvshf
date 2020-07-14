@@ -33,7 +33,6 @@ Otherwise:
     
 Open and follow instructions in given python notebook (credits to Sam Meehan):
 
-    jupyter-notebook .
-    # Open pyhf/HistToPyhf.ipynb
+    jupyter-notebook pyhf/HistToPyhf.ipynb
     # Note: you will need to set the kernel to the pyhf venv if you made one earlier
 
