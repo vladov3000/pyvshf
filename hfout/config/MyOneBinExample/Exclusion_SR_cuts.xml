@@ -1,0 +1,24 @@
+<!DOCTYPE Channel SYSTEM '../HistFactorySchema.dtd'>
+
+<Channel Name="SR_cuts">
+
+  <Data HistoName="hData_SR_obs_cuts" InputFile="data/MyOneBinExample.root" />
+
+  <StatErrorConfig RelErrorThreshold="0" ConstraintType="Gaussian"/>
+
+  <Sample Name="Top" HistoName="hTopNom_SR_obs_cuts" InputFile="data/MyOneBinExample.root" NormalizeByTheory="False">
+    <OverallSys Name="KtScaleTop" High="0.820103" Low="1.33253" />
+    <OverallSys Name="JES" High="1.26857" Low="0.840855" />
+  </Sample>
+
+  <Sample Name="WZ" HistoName="hWZNom_SR_obs_cuts" InputFile="data/MyOneBinExample.root" NormalizeByTheory="False">
+    <OverallSys Name="KtScaleWZ" High="1.16491" Low="1.65393" />
+    <OverallSys Name="JES" High="1.23651" Low="0.883608" />
+  </Sample>
+
+  <Sample Name="SM_GG_onestepCC_425_385_345" HistoName="hSM_GG_onestepCC_425_385_345Nom_SR_obs_cuts" InputFile="data/MyOneBinExample.root" NormalizeByTheory="True">
+    <OverallSys Name="JES" High="1.17916" Low="0.666616" />
+    <NormFactor Name="mu_SIG" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+</Channel>
