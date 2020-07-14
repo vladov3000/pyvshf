@@ -18,6 +18,6 @@ To run HistFitter and get xml workspace:
 
     HistFitter.py -t -x -w -f -F excl -D "before,after" -i analysis/tutorial/MyOneBinExample.py
 
-Next, extract results from HistFitter directory and start working in a python notebook for pyhf.
+Next, extract results from HistFitter directory and start working in a python notebook for pyhf. Specifically, we are most interested in config (contains xml workspace that we will use for pyhf), data (contains some root file), and results (results from HistFitter we can compare against).
 
 
