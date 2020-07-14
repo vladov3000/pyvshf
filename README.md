@@ -18,6 +18,21 @@ To run HistFitter and get xml workspace:
 
     HistFitter.py -t -x -w -f -F excl -D "before,after" -i analysis/tutorial/MyOneBinExample.py
 
-Next, extract results from HistFitter directory and start working in a python notebook for pyhf. Specifically, we are most interested in config (contains xml workspace that we will use for pyhf), data (contains some root file), and results (results from HistFitter we can compare against).
+Next, extract results from HistFitter directory and start working in a python notebook for pyhf. Specifically, we are most interested in config (contains xml workspace that we will use for pyhf), data (contains some root file), and results (results from HistFitter we can compare against). Upload your results to github and start working on your local computer with python notebooks.
 
+Setup enviroment (optional, only if you want your computer to be clean):
+
+    python3 -m venv ./pyhfenv
+    source /pyhfenv/bin/activate
+    pip install pyhf
+    # Note: this virtual env is too large to commit to git, so put it in the .gitignore
+
+Otherwise:
+
+    pip3 install pyhf
+    
+Open and follow instructions in given python notebook (credits to Sam Meehan):
+
+    jupyter-notebook pyhf/HistToPyhf.ipynb
+    # Note: you will need to set the kernel to the right venv if you made one earlier
 
