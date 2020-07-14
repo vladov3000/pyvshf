@@ -1,0 +1,133 @@
+{
+    "channels": [
+        {
+            "name": "SR_cuts",
+            "samples": [
+                {
+                    "data": [
+                        1.1137869358062744
+                    ],
+                    "modifiers": [
+                        {
+                            "data": {
+                                "hi": 0.820103,
+                                "lo": 1.33253
+                            },
+                            "name": "KtScaleTop",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.26857,
+                                "lo": 0.840855
+                            },
+                            "name": "JES",
+                            "type": "normsys"
+                        }
+                    ],
+                    "name": "Top"
+                },
+                {
+                    "data": [
+                        3.485983371734619
+                    ],
+                    "modifiers": [
+                        {
+                            "data": {
+                                "hi": 1.16491,
+                                "lo": 1.65393
+                            },
+                            "name": "KtScaleWZ",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.23651,
+                                "lo": 0.883608
+                            },
+                            "name": "JES",
+                            "type": "normsys"
+                        }
+                    ],
+                    "name": "WZ"
+                },
+                {
+                    "data": [
+                        9.279168128967285
+                    ],
+                    "modifiers": [
+                        {
+                            "data": null,
+                            "name": "lumi",
+                            "type": "lumi"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.17916,
+                                "lo": 0.666616
+                            },
+                            "name": "JES",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": null,
+                            "name": "mu_SIG",
+                            "type": "normfactor"
+                        }
+                    ],
+                    "name": "SM_GG_onestepCC_425_385_345"
+                }
+            ]
+        }
+    ],
+    "measurements": [
+        {
+            "config": {
+                "parameters": [
+                    {
+                        "auxdata": [
+                            1.0
+                        ],
+                        "bounds": [
+                            [
+                                0.8049999999999999,
+                                1.195
+                            ]
+                        ],
+                        "inits": [
+                            1.0
+                        ],
+                        "name": "lumi",
+                        "sigmas": [
+                            0.039
+                        ]
+                    },
+                    {
+                        "bounds": [
+                            [
+                                0.0,
+                                5.0
+                            ]
+                        ],
+                        "fixed": false,
+                        "inits": [
+                            1.0
+                        ],
+                        "name": "mu_SIG"
+                    }
+                ],
+                "poi": "mu_SIG"
+            },
+            "name": "NormalMeasurement"
+        }
+    ],
+    "observations": [
+        {
+            "data": [
+                3.0
+            ],
+            "name": "SR_cuts"
+        }
+    ],
+    "version": "1.0.0"
+}

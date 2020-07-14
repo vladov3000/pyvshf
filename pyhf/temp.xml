@@ -1,0 +1,11 @@
+<!DOCTYPE Combination  SYSTEM '../HistFactorySchema.dtd'>
+
+<Combination OutputFilePrefix="./results/MyOneBinExample/Exclusion"  >
+
+  <Input>config/MyOneBinExample/Exclusion_SR_cuts.xml</Input>
+
+  <Measurement Name="NormalMeasurement" Lumi="1" LumiRelErr="0.039" BinLow="0" BinHigh="50" ExportOnly="True">
+    <POI>mu_SIG</POI>
+  </Measurement>
+
+</Combination>
